@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeDashBoard.ItemsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/circular_drawable"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/forward_arrow"
+                android:rotation="180"
+                app:tint="@android:color/background_dark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingVertical="5dp"
+                android:text="@string/items"/>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="0dp"
+            android:id="@+id/horizontalScrollView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/complete_circle_drawable"
+                    android:src="@drawable/items_1_image"
+                    android:tag="Chicken"
+                    android:id="@+id/itemsButton1"
+                    app:tint="@color/maroon"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/complete_circle_drawable"
+                    android:src="@drawable/items2image"
+                    android:tag="Fish"
+                    android:id="@+id/itemsButton2"
+                    app:tint="@color/maroon"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/complete_circle_drawable"
+                    android:src="@drawable/items_three_image"
+                    android:tag="Meat"
+                    android:id="@+id/itemsButton3"
+                    app:tint="@color/maroon"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/complete_circle_drawable"
+                    android:src="@drawable/items_4_image"
+                    android:tag="Egg"
+                    android:id="@+id/itemsButton4"
+                    app:tint="@color/maroon"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/complete_circle_drawable"
+                    android:src="@drawable/items_five_image"
+                    android:tag="Marinates"
+                    android:id="@+id/itemsButton5"
+                    app:tint="@color/maroon"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/complete_circle_drawable"
+                    android:src="@drawable/items_6_image"
+                    android:tag="Spices"
+                    android:id="@+id/itemsButton6"
+                    app:tint="@color/maroon"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/itemsViewPager"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        android:id="@+id/progressItemsRelativeLayout">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="#800000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

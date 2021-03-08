@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.freshcook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/freshcookicon1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/freshcookicon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HomeDashBoard.AllAddressesListActivity"></activity>
+        <activity android:name=".HomeDashBoard.PlaceOrderDetailsActivity" />
+        <activity android:name=".HomeDashBoard.AboutUsActivity" />
+        <activity android:name=".HomeDashBoard.ProductDetailsActivity" />
+        <activity android:name=".HomeDashBoard.OrdersActivity" />
+        <activity android:name=".HomeDashBoard.UpdateUserProfileActivity" />
+        <activity android:name=".HomeDashBoard.AddAddressActivity" />
+        <activity android:name=".HomeDashBoard.UserProfileActivity" />
+        <activity android:name=".Auth.SignInActivity" />
+        <activity android:name=".HomeDashBoard.CartActivity" />
+        <activity android:name=".HomeDashBoard.ShopInfoActivity" />
+        <activity android:name=".HomeDashBoard.TopStoresActivity" />
+        <activity android:name=".Auth.OTPActivity" />
+        <activity android:name=".HomeDashBoard.ItemsActivity" />
+        <activity android:name=".HomeDashBoard.HomePageActivity" />
+        <activity android:name=".Auth.WelcomeSlidesActivity" />
+        <activity android:name=".Auth.LoginActivity" />
+        <activity android:name=".Auth.WelcomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_fuLmQR4VlyaAER"/>
+    </application>
+
+</manifest>

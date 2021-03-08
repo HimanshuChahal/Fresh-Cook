@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".HomeDashBoard.UpdateUserProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
+        android:padding="15dp"
+        android:text="@string/update_profile"
+        android:background="@color/light_yellow"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp"
+        android:background="@drawable/sign_in_sign_up_drawable"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="4dp"
+            android:textColor="@android:color/background_dark"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:hint="@string/full_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="4dp"
+            android:textColor="@android:color/background_dark"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="@string/phone_number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="4dp"
+            android:textColor="@android:color/background_dark"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:hint="@string/email_address"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/popup_drawable"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/update_profile"/>
+
+</LinearLayout>

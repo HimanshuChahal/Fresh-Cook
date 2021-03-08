@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Auth.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:src="@drawable/backward_arrow_drawable"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="backOnClick"
+        app:tint="@android:color/background_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"
+        android:text="Enter Phone number for"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginStart="20dp"
+        android:textSize="12sp"
+        android:text="@string/otp_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20sp"
+            android:weightSum="10"
+            android:paddingHorizontal="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/indianflag"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:text="@string/phone_number_code"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.8"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:background="@android:color/background_light"
+                android:hint="@string/phone_number"
+                android:textColor="@android:color/background_dark"
+                android:clickable="false"
+                android:id="@+id/phoneNumberEditText"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/maroon"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/keypad_button_drawable"
+            android:backgroundTint="@color/maroon"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:text="@string/next"
+            android:onClick="sendOTPonClick"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical"
+        android:id="@+id/keypadLinearLayout">
+
+    </LinearLayout>
+
+</LinearLayout>

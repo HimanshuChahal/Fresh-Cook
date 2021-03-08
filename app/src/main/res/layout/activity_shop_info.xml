@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/shopInfoRelativeLayout"
+    tools:context=".HomeDashBoard.ShopInfoActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationY="-735dp"
+        android:id="@+id/menuCardView"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="20dp"
+                android:alpha="0.5">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="22dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:rotation="90"
+                        android:src="@drawable/back_arrow"
+                        android:onClick="hideMenuOnClick"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/menuRecyclerView"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/shopInfoViewPager"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:id="@+id/storeNameTextView"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="Shop No., Street Name, Locality, City, State"
+                    android:id="@+id/storeAddressTextView"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="Open"
+                    android:id="@+id/storeTimingsTextView"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/icon_drawable"
+                    android:id="@+id/storeStarsLinearLayout"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/background_light"
+                android:weightSum="6"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/white_background_star"
+                    app:drawableTint="@color/maroon"
+                    android:text="@string/review"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:backgroundTint="@android:color/background_light"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/photo_camera_drawable"
+                    android:backgroundTint="@android:color/background_light"
+                    app:drawableTint="@android:color/darker_gray"
+                    android:text="@string/photos"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:onClick="photosOnClick"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/order_drawable"
+                    app:drawableTint="@android:color/background_dark"
+                    android:backgroundTint="@android:color/background_light"
+                    android:text="@string/report"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:singleLine="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/call_drawable"
+                    android:backgroundTint="@android:color/background_light"
+                    app:drawableTint="#00FF00"
+                    android:text="@string/call"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:singleLine="true"
+                    android:onClick="callOnClick"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/bookmark_drawable"
+                    android:backgroundTint="@android:color/background_light"
+                    app:drawableTint="#000080"
+                    android:text="@string/bookmark"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:singleLine="true"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/share_drawable"
+                    android:backgroundTint="@android:color/background_light"
+                    app:drawableTint="@android:color/holo_blue_dark"
+                    android:text="@string/share"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:onClick="shareOnClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/address"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    android:text="Shop No., Street Name, Locality, City, State"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:text="Review Highlights"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="12sp"
+                    android:text="@string/shop_reviews"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:background="#FFC200"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC200"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/overview"
+            android:onClick="overviewOnClick"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC200"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/menu"
+            android:onClick="menuOnClick"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC200"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/reviews"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@android:color/background_light"
+        android:id="@+id/shopInfoProgressRelativeLayout">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/maroon"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

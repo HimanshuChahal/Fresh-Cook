@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Auth.WelcomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:src="@drawable/welcome_image"
+        android:scaleType="centerInside"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/keypad_button_drawable"
+            android:backgroundTint="@color/maroon"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:text="@string/getting_started"
+            android:singleLine="true"
+            android:onClick="getStartedOnClick"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center|top"
+        android:textSize="12sp"
+        android:text="By continuing you agree to the terms and conditions"
+        android:singleLine="true"/>
+
+</LinearLayout>

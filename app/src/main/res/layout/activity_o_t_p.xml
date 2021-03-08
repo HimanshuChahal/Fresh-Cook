@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".Auth.OTPActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:src="@drawable/backward_arrow_drawable"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="backOnClick"
+        app:tint="@android:color/background_dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:text="@string/otp_verification"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp"
+                android:maxLength="6"
+                android:paddingHorizontal="2dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/otp1TextView"
+                app:drawableStartCompat="@drawable/filled_circle_drawable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp"
+                android:maxLength="6"
+                android:paddingHorizontal="2dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/otp2TextView"
+                app:drawableStartCompat="@drawable/filled_circle_drawable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp"
+                android:maxLength="6"
+                android:paddingHorizontal="2dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/otp3TextView"
+                app:drawableStartCompat="@drawable/filled_circle_drawable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp"
+                android:maxLength="6"
+                android:paddingHorizontal="2dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/otp4TextView"
+                app:drawableStartCompat="@drawable/filled_circle_drawable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp"
+                android:maxLength="6"
+                android:paddingHorizontal="2dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/otp5TextView"
+                app:drawableStartCompat="@drawable/filled_circle_drawable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/background_dark"
+                android:textSize="25sp"
+                android:maxLength="6"
+                android:paddingHorizontal="2dp"
+                android:background="@android:color/background_light"
+                android:id="@+id/otp6TextView"
+                app:drawableStartCompat="@drawable/filled_circle_drawable"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/maroon"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/keypad_button_drawable"
+            android:backgroundTint="@color/maroon"
+            android:textColor="@android:color/background_light"
+            android:text="Verify"
+            android:onClick="verifyOnClick"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@android:color/background_dark"
+        android:orientation="vertical"
+        android:id="@+id/otpKeypadLinearLayout">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<resources>
+
+    <string name="app_name">Fresh Cook</string>
+
+    <string name="getting_started">Continue with Phone Number</string>
+
+    <string name="skip">Skip</string>
+
+    <string name="phone_number_code">+91</string>
+
+    <string name="phone_number">Phone Number</string>
+
+    <string name="next">Next</string>
+
+    <string name="line_text">-------------------</string>
+
+    <string name="email_sign">✉</string>
+
+    <string name="continue_with_email">Continue with email</string>
+
+    <string name="cross">×</string>
+
+    <string name="dashboard_string">☰</string>
+
+    <string name="edit_format">\u270E</string>
+
+    <string name="bell_symbol">🔔</string>
+
+    <string name="user_profile">👤</string>
+
+    <string name="product_search">Search for any product…</string>
+
+    <string name="categories">Categories</string>
+
+    <string name="show_all">Show all</string>
+
+    <string name="cart">🛒</string>
+
+    <string name="wishList">♥</string>
+
+    <string name="house">🏠</string>
+
+    <string name="top_products">Top Products</string>
+
+    <string name="deals">Deal Of The Day</string>
+
+    <string name="trs">Top Rated Stores</string>
+
+    <string name="sign_in">Sign In</string>
+
+    <string name="sign_up">Sign Up</string>
+
+    <string name="f_a_q"><u>F.A.Q.</u></string>
+
+    <string name="t_n_c"><u>Terms and conditions</u></string>
+
+    <string name="p_p"><u>Privacy policy</u></string>
+
+    <string name="dot">\u2022</string>
+
+    <string name="rupees_symbol">\u20B9</string>
+
+    <string name="price">Price</string>
+
+    <string name="delivery">Delivery</string>
+
+    <string name="review">Review</string>
+
+    <string name="vendor">Vendor</string>
+
+    <string name="otp_verification">Please wait.\nWe will auto verify the OTP</string>
+
+    <string name="otp_text">You will receive an SMS with code for verification</string>
+
+    <string name="otp_resend">Didn\'t receive the code? Resend now</string>
+
+    <string name="your_location">Your Location</string>
+
+    <string name="top_stores">Top Stores</string>
+
+    <string name="address">Address</string>
+
+    <string name="overview">Overview</string>
+
+    <string name="menu">Menu</string>
+
+    <string name="reviews">Reviews</string>
+
+    <string name="shop_reviews">People say this place is known for</string>
+
+    <string name="my_cart">My Cart</string>
+
+    <string name="subtraction">-</string>
+
+    <string name="addition">+</string>
+
+    <string name="filter">Filter</string>
+
+    <string name="total">Total</string>
+
+    <string name="checkout">Checkout</string>
+
+    <string name="login">Log In</string>
+
+    <string name="password">Password</string>
+
+    <string name="email_phone_number">Email / Phone number</string>
+
+    <string name="my_account">My Account</string>
+
+    <string name="personal_details">Personal Details</string>
+
+    <string name="first_name">First Name</string>
+
+    <string name="last_name">Last Name</string>
+
+    <string name="add_address">Add Address</string>
+
+    <string name="update_profile">Update Profile</string>
+
+    <string name="full_name">Full Name</string>
+
+    <string name="email_address">Email Address</string>
+
+    <string name="my_orders">My Orders</string>
+
+    <string name="items">Items</string>
+
+    <string name="ordered_on">Ordered on</string>
+
+    <string name="nothing_to_show">Nothing to show</string>
+
+    <string name="name">Name</string>
+
+    <string name="add_to_cart">Add to cart</string>
+
+    <string name="about">About</string>
+
+    <string name="register">Register</string>
+
+    <string name="account_exists">Already have an account? Sign in</string>
+
+    <string name="vendor_registration_terms">By clicking Register, you agree to our Terms and that you have read our Data use Policy</string>
+
+    <string name="report">Report</string>
+
+    <string name="photos">Photos</string>
+
+    <string name="call">Call</string>
+
+    <string name="bookmark">Bookmark</string>
+
+    <string name="share">Share</string>
+
+    <string name="total_amount">Total Amount</string>
+
+    <string name="place_order">Place Order</string>
+
+    <string name="delivery_by">Delivery By</string>
+
+    <string name="pay_now">Pay Now</string>
+
+    <string name="product_details">Product Details</string>
+
+    <string name="product_name">Product Name</string>
+
+    <string name="order_confirmation">Your order has been confirmed</string>
+
+    <string name="order_id">Order ID - </string>
+
+    <string name="date">Date - </string>
+
+    <string name="flash_sale">Flash Sale</string>
+
+    <string name="open">Open</string>
+
+    <string name="close">Close</string>
+
+    <string name="done">Done</string>
+
+    <string name="lets_get_started">Let\'s get started</string>
+
+</resources>

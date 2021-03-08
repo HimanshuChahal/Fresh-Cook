@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".HomeDashBoard.PlaceOrderDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/place_order"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/maroon"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
+                android:text="@string/personal_details"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="@string/name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@android:color/background_dark"
+                android:background="@drawable/circular_drawable"
+                android:id="@+id/placeOrderNameTextView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="@string/phone_number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@android:color/background_dark"
+                android:background="@drawable/circular_drawable"
+                android:id="@+id/placeOrderPhoneNumberTextView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="@string/email_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@android:color/background_dark"
+                android:background="@drawable/circular_drawable"
+                android:id="@+id/placeOrderEmailTextView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="@string/address"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circular_drawable"
+                    android:id="@+id/placeOrderAddressSpinner"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/forward_arrow"
+                    android:rotation="90"
+                    android:backgroundTint="@android:color/background_dark"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/maroon"
+                android:textSize="16sp"
+                android:textStyle="italic|bold"
+                android:text="@string/product_details"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="@string/product_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@android:color/background_dark"
+                android:background="@drawable/circular_drawable"
+                android:id="@+id/placeOrderProductNameTextView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:text="@string/total_amount"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_drawable"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="0dp"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark"
+                    android:text="@string/rupees_symbol"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark"
+                    android:id="@+id/placeOrderTotalAmountTextView"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circular_button_drawable"
+        android:backgroundTint="@color/light_yellow"
+        android:textColor="@android:color/background_light"
+        android:text="@string/pay_now"
+        android:textAllCaps="false"
+        android:onClick="payNowOnClick"/>
+
+</RelativeLayout>
